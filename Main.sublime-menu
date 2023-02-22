@@ -1,0 +1,34 @@
+[
+  {
+    "id": "preferences",
+    "children": [
+      {
+        "caption": "Package Settings",
+        "mnemonic": "P",
+        "id": "package-settings",
+        "children": [
+          {
+            "caption": "LSP",
+            "id": "lsp-settings",
+            "children": [
+              {
+                "caption": "Servers",
+                "id": "lsp-servers",
+                "children": [
+                  {
+                    "caption": "Rosie Language Server",
+                    "command": "edit_settings",
+                    "args": {
+                      "base_file": "${packages}/rosie_language_server/rosie_language_server.sublime-settings",
+                      "default": "// Settings in here override those in \"rosie_language_server/rosie_language_server.sublime-settings\"\n\n{\n\t$0\n}\n",
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

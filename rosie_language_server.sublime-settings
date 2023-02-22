@@ -1,0 +1,15 @@
+{
+    "settings": {
+        // The Codiga API Token to access private rulesets from Codiga Hub.
+        "codiga.api.token": "",
+    },
+
+    //The shell/cmd command that launches the language server
+    "command": ["${node_bin}", "${server_path}", "--stdio"],
+
+    //Targets regular files
+    "schemes": ["file"],
+
+    //Files types supported by Rosie: JavaScript, JavaScript+React, TypeScript, TypeScript+React, Python
+	"selector": "source.js | source.ts | source.jsx | source.tsx | source.tsx | source.js.jsx | source.js.react | source.ts.react | source.python"
+}

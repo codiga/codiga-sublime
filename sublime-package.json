@@ -1,0 +1,58 @@
+{
+  "contributions": {
+    "settings": [
+      {
+        "file_patterns": [
+          "/rosie_language_server.sublime-settings"
+        ],
+        "schema": {
+          "$id": "sublime://settings/rosie_language_server",
+          "definitions": {
+            "PluginConfig": {
+              "properties": {
+                "settings": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "codiga.api.token": {
+                      "type": "string",
+                      "default": "<API TOKEN>",
+                      "description": "Your Codiga API Token"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "allOf": [
+            {
+              "$ref": "sublime://settings/LSP-plugin-base"
+            },
+            {
+              "$ref": "sublime://settings/rosie_language_server#/definitions/PluginConfig"
+            }
+          ]
+        }
+      },
+      {
+        "file_patterns": [
+          "/*.sublime-project"
+        ],
+        "schema": {
+          "properties": {
+            "settings": {
+              "properties": {
+                "LSP": {
+                  "properties": {
+                    "rosie_language_server": {
+                      "$ref": "sublime://settings/rosie_language_server#/definitions/PluginConfig"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

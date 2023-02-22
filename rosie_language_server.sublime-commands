@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "Preferences: Rosie Language Server Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/rosie_language_server/rosie_language_server.sublime-settings",
+            "default": "// Settings in here override those in \"rosie_language_server/rosie_language_server.sublime-settings\"\n\n{\n\t$0\n}\n"
+        }
+    },
+]
