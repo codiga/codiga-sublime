@@ -1,3 +1,5 @@
+[Datadog acquired Codiga](https://www.codiga.io/blog/codiga-joins-datadog/). This repository is no longer active.
+
 # Sublime Text Plugin for the Rosie Language Server
 
 Sublime Text plugin for integrating with Codiga's Rosie Language Server available at [Codiga/vscode-plugin](https://github.com/codiga/vscode-plugin/server).
